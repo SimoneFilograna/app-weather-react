@@ -15,8 +15,8 @@ const Card = ({ coord, weather, main, wind, name }) => {
                     <p className="card-text">Longitudine: {coord.lon}</p>
                     <p className="card-text">Latitudine: {coord.lat}</p>
                     <p className="card-text">{capitalizedWeather}</p>
-                    <p>Max: {main.temp_max}</p>
-                    <p>Min: {main.temp_min}</p>
+                    <p>Max: {main.temp_max}°C</p>
+                    <p>Min: {main.temp_min}°C</p>
                     <p>Umidità: {main.humidity}%</p>
                     <p>Velocità vento: {wind.speed}Km/h</p>
                 </div>
