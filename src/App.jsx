@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Card from './Components/Card';
+import apiKey from './api-key';
 import './App.css';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   const [weather, setWeather] = useState(null)
   const [coords, setCoords] = useState(null)
 
-  const key = 'd21e37561851e85923a0ef1efa2bf9af';
+  const key = apiKey;
 
   // fetch and set coord if we need using openweatherGeolocation 3.0 with subs
 
